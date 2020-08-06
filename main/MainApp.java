@@ -7,7 +7,7 @@ public class MainApp {
 	//fields
 	public static final String DRIVER_STRING ="com.microsoft.sqlserver.jdbc.SQLServerDriver";
 	//represent the DB file location - include opening string of specific DB type 
-	public static final String URL_STRING ="replace here";
+	public static final String URL_STRING ="place here";
 
 	public static void main(String[] args) {
 		SqlDbConnection dbConnector=null;
@@ -21,7 +21,7 @@ public class MainApp {
 			System.out.println("\n================================\n");
 
 			//simple INSERT SENTENCE
-			//dbConnector.simpleInsertUpdateDeleteQuery("insert into MyTable(ID,NAME,LASTNAME,SALARY) values('2','EDEN','BARNOVSKY',1510)");
+			//dbConnector.simpleInsertUpdateDeleteQuery("insert into MyTable(ID,NAME,LASTNAME,SALARY) values('2','FIRST_NAME','LAST_NAME',1510)");
 			rs=dbConnector.simpleSelectQuery("SELECT * FROM MyTable");
 			dbConnector.printRS(rs);
 			System.out.println("\n================================\n");
